@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRM</title>
+    <link rel="stylesheet" href="./style/style.css">
+    <script src="./code/index.js" type="module"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div><a href="/">Головна</a></div>
+            <div>Експортувати</div>
+            <div>Імпортувати</div>
+            <div>Дістати дані по url</div>
+            <div>Відерити меню сортування</div>
+            <div>Вийти</div>
+        </nav>
+    </header>
+    <main>
+        <nav>
+            <ul class="navigation">
+                <li><a href="./restoran/">Ресторан</a> </li>
+                <li><a href="./video/">Відео хостинг</a></li>
+                <li><a href="./store/">Магазин</a> </li>
+            </ul>
+        </nav>
+        <section>
+            <button class="add">Додати щось нове <span class="icon">&#128194;</span></button>
+        </section>
+    </main>
+    <div class="container-modal">
+        <div class="modal">
+            <h2>
+                Оберіть категорїю та введіть інформацію.
+            </h2>
+            <form>
+                <div class="select-list">
+                    <select id="select">
+                        <option selected disabled>Оберіть категорію</option>
+                        <option value="Магазин">Магазин</option>
+                        <option value="Відео хостинг">Відео хостинг</option>
+                        <option value="Ресторан">Ресторан</option>
+                    </select>
+                </div>
+                <div class="form-info"></div>
+                <div class="form-btns">
+                    <button type="button" id="save">Зберегти</button>
+                    <button type="button" id="close">Закрити</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer></footer>
+    <script src="./code/start-page.js" type="module"></script>
+
+
+</body>
+
+</html>
